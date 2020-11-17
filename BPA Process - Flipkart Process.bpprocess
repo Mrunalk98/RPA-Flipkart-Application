@@ -1,0 +1,83 @@
+﻿<process name="Flipkart Process" version="1.0" bpversion="6.9.0.26970" narrative="" byrefcollection="true" preferredid="a26c9965-5a90-45d0-9fd7-8ceecb83851d" published="true">
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.5625</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="7df88377-d553-480a-bf2d-43a3e2308a0a" name="Start" type="Start">
+    <display x="0" y="-165" />
+    <onsuccess>979f9611-575a-4b17-b873-e4a9438fccec</onsuccess>
+  </stage>
+  <stage stageid="8c26bdd7-110c-4ddb-92ef-2cb02b390da5" name="End" type="End">
+    <display x="180" y="60" />
+  </stage>
+  <stage stageid="4b56adaa-1e2b-4e73-8b85-942c1106561e" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="979f9611-575a-4b17-b873-e4a9438fccec" name="Launch Application" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="0" y="-120" />
+    <onsuccess>8615cbfd-1a81-400f-9489-f5ff412c538c</onsuccess>
+    <resource object="FlipkartApplication" action="Launch Application" />
+  </stage>
+  <stage stageid="8615cbfd-1a81-400f-9489-f5ff412c538c" name="Search Product" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="0" y="-75" />
+    <onsuccess>3ad28111-14c6-49a5-87ec-2f899ae4b6dc</onsuccess>
+    <resource object="FlipkartApplication" action="Search Product" />
+  </stage>
+  <stage stageid="3ad28111-14c6-49a5-87ec-2f899ae4b6dc" name="Retrieve Data" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="0" y="-30" />
+    <onsuccess>30076947-3bb5-4d0d-adea-f46067ea5573</onsuccess>
+    <resource object="FlipkartApplication" action="Retrieve Data" />
+  </stage>
+  <stage stageid="30076947-3bb5-4d0d-adea-f46067ea5573" name="Write Data in Excel" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="0" y="15" />
+    <onsuccess>2db66ded-a666-4770-81b9-7bbdbd69a144</onsuccess>
+    <resource object="FlipkartApplication" action="Write Data in Excel" />
+  </stage>
+  <stage stageid="2db66ded-a666-4770-81b9-7bbdbd69a144" name="Data Verification" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="0" y="60" />
+    <onsuccess>1885d71c-0941-4152-910f-97de4bedf45e</onsuccess>
+    <resource object="FlipkartApplication" action="Data Verification" />
+  </stage>
+  <stage stageid="bd539149-8d37-4210-90b9-8fe33d617582" name="Verification of changes in data" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="180" y="-165" />
+    <onsuccess>3caa4fb5-6c00-44ca-a42b-cc4e44485152</onsuccess>
+    <resource object="FlipkartApplication" action="Verification of changes in data" />
+  </stage>
+  <stage stageid="1885d71c-0941-4152-910f-97de4bedf45e" name="Anchor1" type="Anchor">
+    <loginhibit onsuccess="true" />
+    <display x="90" y="60" w="10" h="10" />
+    <onsuccess>844daf0f-caa0-4081-8915-6ae359425fc9</onsuccess>
+  </stage>
+  <stage stageid="844daf0f-caa0-4081-8915-6ae359425fc9" name="Anchor2" type="Anchor">
+    <loginhibit onsuccess="true" />
+    <display x="90" y="-165" w="10" h="10" />
+    <onsuccess>bd539149-8d37-4210-90b9-8fe33d617582</onsuccess>
+  </stage>
+  <stage stageid="3caa4fb5-6c00-44ca-a42b-cc4e44485152" name="Insert excel data into DB" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="180" y="-105" />
+    <onsuccess>ef3fcdff-6ea8-48c3-9b35-7d34ac1e8c8a</onsuccess>
+    <resource object="FlipkartApplication" action="Insert excel data into DB" />
+  </stage>
+  <stage stageid="ef3fcdff-6ea8-48c3-9b35-7d34ac1e8c8a" name="Insert Data" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="180" y="-60" />
+    <onsuccess>1dd95f21-ea75-49e8-9500-a9499e7ac4cb</onsuccess>
+    <resource object="FlipkartApplication" action="Insert Data" />
+  </stage>
+  <stage stageid="1dd95f21-ea75-49e8-9500-a9499e7ac4cb" name="Get Color" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="180" y="0" />
+    <onsuccess>8c26bdd7-110c-4ddb-92ef-2cb02b390da5</onsuccess>
+    <resource object="FlipkartApplication" action="Get Color" />
+  </stage>
+</process>
